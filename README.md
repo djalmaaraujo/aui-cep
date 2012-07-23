@@ -5,8 +5,13 @@
 ## Configuration with no yui3-gallery CDN
 You can configure as an "lazy-load" module, using YUI Loader, preventing sync bad loading files.
 
-	YUI({		modules: { 
-			'aui-cep': {				fullpath: './path/to/aui-cep.js',				requires: ['aui-base','jsonp']			}		}	}).use('aui-cep', function (Y) {
+	AUI({
+		modules: { 
+			'aui-cep': {
+				fullpath: '../../build/aui-cep/aui-cep.js',
+				requires: ['aui-base','jsonp']
+			}
+		}	}).use('aui-cep', function (Y) {
 		// Your code goes here	});
 
 ## Usage
